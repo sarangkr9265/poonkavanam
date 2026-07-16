@@ -3,177 +3,261 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Poonkavanam</title>
+<title>Poonkavanam | Home of Friends</title>
 
 <style>
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
 }
 
 body{
-    background:#f4f7f2;
-    color:#333;
+    background:linear-gradient(135deg,#ffd6e7,#ffeef5,#fff8fb);
+    color:#444;
 }
 
+/* Hero Section */
 header{
-    background:linear-gradient(135deg,#2e8b57,#14532d);
-    color:white;
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
     text-align:center;
-    padding:70px 20px;
+    color:white;
+    background:
+    linear-gradient(rgba(255,105,180,.45),rgba(255,182,193,.45)),
+    url("images/photo1.jpg") center/cover;
 }
 
 header h1{
-    font-size:3rem;
+    font-size:65px;
+    text-shadow:2px 2px 10px black;
 }
 
 header p{
+    font-size:24px;
     margin-top:15px;
-    font-size:1.2rem;
+    text-shadow:1px 1px 8px black;
 }
 
+.btn{
+    margin-top:35px;
+    text-decoration:none;
+    color:white;
+    background:#ff5fa2;
+    padding:15px 35px;
+    border-radius:40px;
+    font-size:20px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#ff2e85;
+    transform:scale(1.05);
+}
+
+/* Sections */
+
 section{
-    max-width:1000px;
+    width:90%;
+    max-width:1100px;
     margin:auto;
-    padding:50px 20px;
+    padding:70px 20px;
 }
 
 .card{
     background:white;
-    padding:25px;
-    margin-top:20px;
-    border-radius:12px;
-    box-shadow:0 4px 10px rgba(0,0,0,.1);
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    text-align:center;
 }
 
-.students{
+.card h2{
+    color:#ff4d94;
+    margin-bottom:20px;
+}
+
+.card p{
+    line-height:1.9;
+    font-size:18px;
+}
+
+/* Gallery */
+
+.gallery{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:20px;
-    margin-top:30px;
-}
-
-.student{
-    background:white;
-    border-radius:12px;
-    padding:20px;
-    text-align:center;
-    box-shadow:0 3px 8px rgba(0,0,0,.1);
-}
-
-.student img{
-    width:120px;
-    height:120px;
-    border-radius:50%;
-    object-fit:cover;
-    margin-bottom:15px;
-}
-
-footer{
-    background:#14532d;
-    color:white;
-    text-align:center;
-    padding:20px;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
     margin-top:40px;
 }
-</style>
 
+.photo{
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.photo:hover{
+    transform:translateY(-8px);
+}
+
+.photo img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.photo h3{
+    color:#ff4d94;
+    padding:15px;
+}
+
+.photo p{
+    padding:0 20px 25px;
+}
+
+/* Quote */
+
+.quote{
+    text-align:center;
+    font-size:30px;
+    color:#ff4d94;
+    font-weight:bold;
+    padding:60px 20px;
+}
+
+/* Footer */
+
+footer{
+    background:#ff4d94;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+footer h2{
+    margin-bottom:10px;
+}
+
+</style>
 </head>
+
 <body>
 
 <header>
+
 <h1>🏡 Poonkavanam</h1>
-<p>More than a House... A Family.</p>
+
+<p>Where Friendship Feels Like Home ❤️</p>
+
+<a href="#about" class="btn">Explore Our Story</a>
+
 </header>
+
+<section id="about">
+
+<div class="card">
+
+<h2>💖 Welcome to Poonkavanam</h2>
+
+<p>
+
+Poonkavanam isn't just a house—it's a place where nine students from different
+walks of life became one beautiful family. Every day is filled with laughter,
+inside jokes, midnight snacks, endless conversations, movie nights, birthday
+celebrations, study sessions, and unforgettable memories.
+
+<br><br>
+
+Here, happiness is shared, problems become lighter, and every achievement is
+celebrated together. We may have different dreams and personalities, but our
+friendship is what makes Poonkavanam truly special.
+
+<br><br>
+
+Every room holds a story. Every photo captures a memory. Every smile reminds
+us that the best part of this home isn't the walls—it's the people inside.
+
+</p>
+
+</div>
+
+</section>
 
 <section>
 
-<div class="card">
-<h2>About Poonkavanam</h2>
-<br>
+<h2 style="text-align:center;color:#ff4d94;font-size:40px;">
+📸 Our Friendship
+</h2>
+
+<div class="gallery">
+
+<div class="photo">
+
+<img src="images/photo1.jpg">
+
+<h3>🏡 Our Home</h3>
+
 <p>
-Poonkavanam is not just a house—it is a home built on friendship,
-respect, laughter, and unforgettable memories. Nine students from
-different backgrounds live together like one family, supporting each
-other through every challenge and celebrating every success.
+The place where strangers became brothers, and every day became a beautiful memory.
 </p>
-<br>
+
+</div>
+
+<div class="photo">
+
+<img src="images/photo2.jpg">
+
+<h3>😂 Fun & Chaos</h3>
+
 <p>
-Every meal shared, every late-night conversation, every exam season,
-and every celebration has strengthened the bond between us. Poonkavanam
-will always remain a place filled with happiness, unity, and memories
-that last a lifetime.
+Late-night talks, random dancing, endless laughter, and memories that will stay forever.
 </p>
+
 </div>
 
-<h2 style="margin-top:50px;text-align:center;">Our Family Members</h2>
+<div class="photo">
 
-<div class="students">
+<img src="images/photo3.jpg">
 
-<div class="student">
-<img src="images/student1.jpg" alt="">
-<h3>Student 1</h3>
-<p>The motivator who keeps everyone's spirits high.</p>
-</div>
+<h3>❤️ Forever Family</h3>
 
-<div class="student">
-<img src="images/student2.jpg" alt="">
-<h3>Student 2</h3>
-<p>The responsible one who always helps everyone.</p>
-</div>
+<p>
+Different people, different dreams, one heart, one home, one unforgettable journey.
+</p>
 
-<div class="student">
-<img src="images/student3.jpg" alt="">
-<h3>Student 3</h3>
-<p>The entertainer who fills the house with laughter.</p>
-</div>
-
-<div class="student">
-<img src="images/student4.jpg" alt="">
-<h3>Student 4</h3>
-<p>The hardworking dreamer who inspires everyone.</p>
-</div>
-
-<div class="student">
-<img src="images/student5.jpg" alt="">
-<h3>Student 5</h3>
-<p>The foodie who brings everyone together.</p>
-</div>
-
-<div class="student">
-<img src="images/student6.jpg" alt="">
-<h3>Student 6</h3>
-<p>The calm and caring friend everyone depends on.</p>
-</div>
-
-<div class="student">
-<img src="images/student7.jpg" alt="">
-<h3>Student 7</h3>
-<p>The adventurous soul who creates unforgettable memories.</p>
-</div>
-
-<div class="student">
-<img src="images/student8.jpg" alt="">
-<h3>Student 8</h3>
-<p>The creative mind behind many great ideas.</p>
-</div>
-
-<div class="student">
-<img src="images/student9.jpg" alt="">
-<h3>Student 9</h3>
-<p>The heart of Poonkavanam, bringing everyone together.</p>
 </div>
 
 </div>
 
 </section>
 
+<div class="quote">
+
+✨ "A house is built with bricks, but a home is built with friendship." ✨
+
+</div>
+
 <footer>
-<h3>Poonkavanam ❤️</h3>
-<p>9 Students • 1 Home • Countless Memories</p>
-<p>© 2026 Poonkavanam</p>
+
+<h2>❤️ Poonkavanam ❤️</h2>
+
+<p>9 Friends • 1 Home • Infinite Memories</p>
+
+<br>
+
+<p>Made with love by the Poonkavanam Family</p>
+
 </footer>
 
 </body>
